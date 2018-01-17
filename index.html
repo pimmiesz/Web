@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>หน้าหลัก</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style type="text/css">
+    .centerr {
+      width: 90%;
+      background-color: #efefef;
+      text-align: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .modalDialog {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 99999;
+      opacity: 0;
+      transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      pointer-events: none;
+    }
+
+    .modalDialog:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modalDialog>div {
+      width: 450px;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background: #fff;
+      background: linear-gradient(#fff, #999);
+      background: linear-gradient(#fff, #999);
+      background: linear-gradient(#fff, #999);
+    }
+    .close{
+      color: #000000;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+
+<body bgcolor="#016643">
+  <div align="center" padding="0px 0px">
+    <div class="centerr">
+      <img src="images/header.jpg" width="100%"> </div>
+    <div>
+      <nav id="nav" style="align:center; width:90%">
+        <ul>
+          <li class="current">
+            <a href="index.html">หน้าหลัก</a>
+          </li>
+          <li>
+            <a href="สมาพันธ์.html">สมาพันธ์ฯ</a>
+          </li>
+          <li>
+            <a href="มูลนิธิ.html">มูลนิธิฯ</a>
+          </li>
+          <li>
+            <a href="สมาคม.html">สมาคมฯ</a>
+          </li>
+          <li>
+            <a href="สถาบันพัฒนา.html">สถาบันพัฒนาฯ</a>
+          </li>
+          <li>
+            <a href="สหกรณ์.html">สหกรณ์ฯ</a>
+          </li>
+          <li>
+            <a href="#openModal">สมาชิก</a>
+            <div id="openModal" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+              <!--  <span class="close1">x</span>-->
+                <br>
+                <p>สมาชิกสมาพันธ์โปรดติดต่อ 085-409-1207</p>
+                <p>สมาชิกสมาคมโปรดติดต่อ 085-409-1207</p>
+              </div>
+            </div>
+          </li>
+          <li>
+
+            <a href="#openModal1">ติดต่อเรา</a>
+            <div id="openModal1" class="modalDialog">
+              <div>
+                <!--<span class="close2">&times;</span>-->
+                <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+                <br>
+                <p align="center"><br>โทร. 085-409-1207 ชื่อคุณคมณ์นคร แก้วมณี</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="centerr">
+      <artical>
+        <img src="images/body.jpg" width="100%"> </artical>
+    </div>
+    <div class="centerr" style="background-color:#303030">
+      <ul>
+        <a href="#openModal2">
+          <img src="images/menu1_01.jpg" width="18%"> </a>
+        <div id="openModal2" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+            <p align="center"><br>จะได้แจ้งให้ท่านทราบต่อไป</p>
+          </div>
+        </div>
+        <a href="#openModal3">
+          <img src="images/menu1_02.jpg" width="18%"> </a>
+        <div id="openModal3" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+            <p align="center"><br>จะได้แจ้งให้ท่านทราบต่อไป</p>
+          </div>
+        </div>
+        <a href="#openModal4">
+          <img src="images/menu1_03.jpg" width="18%"> </a>
+        <div id="openModal4" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+            <p align="center"><br>โทร. 085-409-1207 ชื่อคุณคมณ์นคร แก้วมณี</p>
+          </div>
+        </div>
+        <a href="#openModal5">
+          <img src="images/menu1_04.jpg" width="18%"> </a>
+        <div id="openModal5" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+            <p align="center"><br>ท่านผู้มีจิตศรัทธาติดต่อ 085-409-1207<br> หรือ 083-020-8563<br> หรือโอนทุนทรัพย์ของท่าน สมทบเงินกองทุนได้ที่<br> บัญชีกสิกรไทย เลขที่บัญชี xxxxxxxx <br>ชื่อกองทุนมูลนิธิคุ้มครองผู้ใช้บริการรถยนต์สาธารณะ</p>
+          </div>
+        </div>
+        <a href="#openModal6">
+          <img src="images/menu1_05.jpg" width="18%"> </a>
+        <div id="openModal6" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close" style="color:#000000">x</a>
+            <p align="center"><br>จะได้แจ้งให้ท่านทราบต่อไป</p>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <script src="assets/js/main.js"></script>
+    
+  </div>
+
+</body>
+
+</html>

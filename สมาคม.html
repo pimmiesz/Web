@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>สมาคม</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    .centerr {
+      width: 1200px;
+      background-color: #efefef;
+      text-align: center;
+    }
+  </style>
+  <style>
+    #navbar {
+      background-color: #333;
+      position: fixed;
+      top: -50px;
+      width: 100%;
+      display: block;
+      transition: top 0.3s;
+    }
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  </style>
+</head>
+
+<body bgcolor="#016643">
+  <div>
+    <div id="navbar">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="#art1">สมาคมวิชาชีพ</a>
+      <a href="#art2">วิสัยทัศน์</a>
+      <a href="#art3">การจดทะเบียนสมาคม</a>
+      <a href="#art4">แผงผังบริหาร</a>
+      <a href="#art5">โครงการหลัก</a>
+    </div>
+  </div>
+  <!-- Main -->
+  <!-- Footer -->
+  <!-- Scripts -->
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif] style="padding: 15px 15px 2500px; font-size: 30px;"-->
+  <div align="center">
+    <div class="centerr">
+      <artical id="art1">
+        <br>
+        <br>
+        <p class="text-center">
+          <font size="10">สมาคมวิชาชีพผู้ขับขี่รถยนต์โดยสาธารณะ</font>
+        </p>
+        <img src="images/3-1.jpg" width="500px">
+        <br>
+        <br> </artical>
+      <div>
+        <artical id="art2">
+          <br>
+          <br>
+          <img src="images/3-2-2.jpg" width="800px"> </artical>
+      </div>
+      <div>
+        <artical id="art3">
+          <br>
+          <br>
+          <img src="images/3-3.jpg" width="1000px"> </artical>
+      </div>
+      <div>
+        <artical id="art4">
+          <br>
+          <br>
+          <img src="images/3-4.png" width="1000px"> </artical>
+      </div>
+      <div align="center">
+        <artical id="art5">
+          <br>
+          <br>
+          <img src="images/3-5.jpg" width="300px">
+          <div align="left">
+            <div class="text-center" style="padding: 15px; font-size: 30px;">
+              <h3><b>โครงการหลักของสมาคมวิชาชีพผู้ขับขี่รถยนต์โดยสารสาธารณะ</b></h3>
+            </div>
+            <div aling="left" style="padding:15px">
+              <ul>
+                <a href="">1.โครงการเพื่อการศึกษาวิจัยและพัฒนาปัจจัยที่มีผลต่อการให้บริการและการใช้บริการรถยนต์โดยสารสาธารณะ</a>
+              </ul>
+              <ul>
+                <a href="">2.โครงการศึกษาวิจัยและปัจจัยนำไปสู่สภาวิชาชีพผู้ขับรถยนต์โดยสารสาธารณะ </a>
+              </ul>
+              <ul>
+                <a href="">3.โครงการวางแผนงานการพัฒนาปรับปรุงข้อกำหนดบทบัญญัตินำสู่มาตรฐานการให้บริการรถยนต์สาธารณะในระดับสากล</a>
+              </ul>
+              <ul>
+                <a href="">4.โครงการสงเคราะห์ช่วยเหลือ ให้คำปรึกษาแก่สมาชิกคามสิทธิประโยชน์ โดยนิตินัย ที่พึงได้รับ</a>
+              </ul>
+              <ul>
+                <a href="">5.โครงการความร่วมมือกับองค์กรการกุศลเพื่อการกุศล และองค์กรสาธารณะประโยชน์เพื่อสาธารณะประโยชน์</a>
+              </ul>
+            </div>
+          </div>
+        </artical>
+      </div>
+    </div>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+          window.onscroll=function() {
+            scrollFunction()
+          }
+
+          ;
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("navbar").style.top="0";
+            }
+            else {
+              document.getElementById("navbar").style.top="-50px";
+            }
+          }
+    </script>
+    
+  </div>
+</body>
+
+</html>
