@@ -27,9 +27,6 @@
       background: rgba(0, 0, 0, 0.8);
       z-index: 99999;
       opacity: 0;
-      transition: opacity 400ms ease-in;
-      transition: opacity 400ms ease-in;
-      transition: opacity 400ms ease-in;
       pointer-events: none;
     }
 
@@ -43,21 +40,20 @@
       position: relative;
       margin: 10% auto;
       padding: 5px 20px 13px 20px;
-      border-radius: 10px;
+      border-radius: 0px;
       background: #fff;
+      /*background: linear-gradient(#fff, #999);
       background: linear-gradient(#fff, #999);
-      background: linear-gradient(#fff, #999);
-      background: linear-gradient(#fff, #999);
+      background: linear-gradient(#fff, #999);*/
     }
-    .close{
+
+    .close {
       color: #000000;
       position: absolute;
       right: 10px;
-      top: 0px;
+      top: none;
       font-weight: bold;
     }
-
-
   </style>
 </head>
 
@@ -88,25 +84,29 @@
           </li>
           <li>
             <a href="#openModal">สมาชิก</a>
-            <div id="openModal" class="modalDialog">
-              <div>
+            <div id="openModal" class="modalDialog" padding="none">
+              <div padding="0px" margin="0px">
                 <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-              <!--  <span class="close1">x</span>-->
-                <br>
-                <p>สมาชิกสมาพันธ์โปรดติดต่อ 085-409-1207</p>
-                <p>สมาชิกสมาคมโปรดติดต่อ 085-409-1207</p>
+                <div class="modal-header" max-width="">
+                  <br>
+                  <h4 class="modal-title" style="color:#000000">สมาชิก</h4>
+                </div>
+                <p>สมาชิกสมาพันธ์ โปรดติดต่อ 085-409-1207</p>
+                <p>สมาชิกสมาคม โปรดติดต่อ 085-409-1207</p>
               </div>
             </div>
           </li>
           <li>
-
             <a href="#openModal1">ติดต่อเรา</a>
             <div id="openModal1" class="modalDialog">
               <div>
                 <!--<span class="close2">&times;</span>-->
                 <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-                <br>
-                <p align="center"><br>โทร. 085-409-1207 ชื่อคุณคมณ์นคร แก้วมณี</p>
+                <div class="modal-header" max-width="">
+                  <br>
+                  <h4 class="modal-title" style="color:#000000">ติดต่อเรา</h4>
+                </div>
+                <p align="center">โทร. 085-409-1207 ชื่อคุณคมณ์นคร แก้วมณี</p>
               </div>
             </div>
           </li>
@@ -124,7 +124,11 @@
         <div id="openModal2" class="modalDialog">
           <div>
             <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-            <p align="center"><br>จะได้แจ้งให้ท่านทราบต่อไป</p>
+            <br>
+            <div class="modal-header" max-width="">
+              <h4 class="modal-title" style="color:#000000">ประกาศทั่วไป</h4>
+            </div>
+            <p align="center">จะได้แจ้งให้ท่านทราบต่อไป</p>
           </div>
         </div>
         <a href="#openModal3">
@@ -132,7 +136,11 @@
         <div id="openModal3" class="modalDialog">
           <div>
             <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-            <p align="center"><br>จะได้แจ้งให้ท่านทราบต่อไป</p>
+            <br>
+            <div class="modal-header" max-width="">
+              <h4 class="modal-title" style="color:#000000">ข่าวสารและกิจกรรม</h4>
+            </div>
+            <p align="center">จะได้แจ้งให้ท่านทราบต่อไป</p>
           </div>
         </div>
         <a href="#openModal4">
@@ -140,7 +148,11 @@
         <div id="openModal4" class="modalDialog">
           <div>
             <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-            <p align="center"><br>โทร. 085-409-1207 ชื่อคุณคมณ์นคร แก้วมณี</p>
+            <br>
+            <div class="modal-header" max-width="">
+              <h4 class="modal-title" style="color:#000000">แผนงาน/โครงการ</h4>
+            </div>
+            <p align="center">โทร. 085-409-1207 ชื่อคุณคมณ์นคร แก้วมณี</p>
           </div>
         </div>
         <a href="#openModal5">
@@ -148,7 +160,15 @@
         <div id="openModal5" class="modalDialog">
           <div>
             <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-            <p align="center"><br>ท่านผู้มีจิตศรัทธาติดต่อ 085-409-1207<br> หรือ 083-020-8563<br> หรือโอนทุนทรัพย์ของท่าน สมทบเงินกองทุนได้ที่<br> บัญชีกสิกรไทย เลขที่บัญชี xxxxxxxx <br>ชื่อกองทุนมูลนิธิคุ้มครองผู้ใช้บริการรถยนต์สาธารณะ</p>
+            <br>
+            <div class="modal-header">
+              <h4 class="modal-title" style="color:#000000">กองทุน</h4>
+            </div>
+            <p align="center">ท่านผู้มีจิตศรัทธาติดต่อ 085-409-1207
+              <br> หรือ 083-020-8563
+              <br> หรือโอนทุนทรัพย์ของท่าน สมทบเงินกองทุนได้ที่
+              <br> บัญชีกสิกรไทย เลขที่บัญชี xxxxxxxx
+              <br>ชื่อกองทุนมูลนิธิคุ้มครองผู้ใช้บริการรถยนต์สาธารณะ</p>
           </div>
         </div>
         <a href="#openModal6">
@@ -156,13 +176,16 @@
         <div id="openModal6" class="modalDialog">
           <div>
             <a href="#close" title="Close" class="close" style="color:#000000">x</a>
-            <p align="center"><br>จะได้แจ้งให้ท่านทราบต่อไป</p>
+            <br>
+            <div class="modal-header" max-width="">
+              <h4 class="modal-title" style="color:#000000">สวัสดิการ</h4>
+            </div>
+            <p align="center">จะได้แจ้งให้ท่านทราบต่อไป</p>
           </div>
         </div>
       </ul>
     </div>
     <script src="assets/js/main.js"></script>
-    
   </div>
 
 </body>
